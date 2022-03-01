@@ -9,7 +9,7 @@ module SecondBase
       yield
       return
     end
-    original_config = ActiveRecord::Tasks::DatabaseTasks.current_config
+#     original_config = ActiveRecord::Tasks::DatabaseTasks.current_config
     original_configurations = Rails.application.config.database_configuration
     original_migrations_path = ActiveRecord::Tasks::DatabaseTasks.migrations_paths
     original_db_dir = ActiveRecord::Tasks::DatabaseTasks.db_dir
