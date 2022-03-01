@@ -34,7 +34,7 @@ namespace :db do
 
     desc 'Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog).' unless SecondBase::Railtie.run_with_db_tasks?
     task :migrate => ['db:load_config'] do
-      SecondBase.on_base { Rake::Task['db:migrate'].execute }
+#       SecondBase.on_base { Rake::Task['db:migrate'].execute }
     end
 
     namespace :migrate do
